@@ -21,11 +21,16 @@ Deployment link is:
 `eslint`
 `eslint-plugin`
 
+## **Tools/Technologies**
+* React
+* Redux
+* Material ui
+* Jest for testing
 
 
 ## **Screenshots**
 
-![myimage-alt-tag](https://res.cloudinary.com/upperli/image/upload/v1632602449/Screenshot_2021-09-24_at_1.19.34_PM_songcp.png)
+![myimage-alt-tag](https://res.cloudinary.com/upperli/image/upload/v1632602449/Screenshot_2021-09-24_at_1.19.34_PM_songcp.png) - Loading State
 
 ![myimage-alt-tag](https://res.cloudinary.com/upperli/image/upload/v1632602539/screencapture-localhost-3000-2021-09-24-13_16_01_hlqlr5.png)
 
@@ -33,8 +38,6 @@ Deployment link is:
 
 
 ## **Features**
-
-### Best practices
 * Added prop-types making the code easy to use and ensuring the type of data in a component are rendered correctly
 * Errors were handles well
 * Routes was handed properly although this is a one page app
