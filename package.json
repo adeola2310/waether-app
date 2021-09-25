@@ -11,16 +11,56 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "prettier-fix": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss}\" \"!\\.next/**\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage",
+    "dist",
+    "build",
+    "docs",
+    ".vscode",
+    ".github",
+    ".idea",
+    ".storybook"
+  ],
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "proseWrap": "always",
+    "jsxSingleQuote": false,
+    "jsxBracketSameLine": false,
+    "quoteProps": "as-needed",
+    "htmlWhitespaceSensitivity": "css",
+    "arrowParens": "avoid"
+  },
+  "lint-staged": {
+    "**/*.+(js|ts|tsx|jsx)": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ],
+    "**/*.+(css|sass|less|scss|json|html|jsx)": [
+      "prettier --write --ignore-unknown"
     ]
   },
   "browserslist": {
@@ -34,5 +74,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "lint-staged": "^10.4.2",
+    "prettier": "^2.1.2"
   }
+
 }
