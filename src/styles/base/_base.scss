@@ -1,0 +1,19 @@
+//base styling
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  font-size: var(--font-size-p-regular);
+  color: var(--white);
+  background-image: url('../../assets/images/wb.jpg');
+}
