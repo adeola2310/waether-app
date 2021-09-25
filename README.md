@@ -41,9 +41,14 @@ Deployment link is:
 * Added prop-types making the code easy to use and ensuring the type of data in a component are rendered correctly
 * Errors were handles well
 * Routes was handed properly although this is a one page app
+* Comments were added where neccessary
 * Codes were linted to analyze and find error in code, prettier for formatting
 * Redux for state management to avoid prop drilling in app
+* All files related to a single components are in a folder
 * Ensure that I make use of code splitting to reduce load time and allowing load chunk only when the component/page is rendered or needed, Using suspense and lazy.
 
 ## **Features**
-
+* Funtions for Convering dates in AM/PM and yyyy-mm-dd formats were written without using any library
+* Material ui was used in styling the weather cards and button and material icons for icons
+* User can get tempatures for a given country Munich in this case
+* 
