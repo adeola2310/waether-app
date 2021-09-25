@@ -1,5 +1,5 @@
 ## **Deployment**
-This project is deployed using automatic deploy with Netlify.
+This project is deployed using continous deployment with Netlify.
 Deployment link is: https://weatherminiapp.netlify.app/
 
 ## **Getting Started**
