@@ -1,6 +1,6 @@
 ## **Deployment**
 This project is deployed using automatic deploy with Netlify.
-Deployment link is: 
+Deployment link is: https://weatherminiapp.netlify.app/
 
 ## **Getting Started**
 *```Git clone "name of repo"```
