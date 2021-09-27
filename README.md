@@ -49,7 +49,7 @@ Deployment link is: https://weathermini-app.netlify.app/
 * Avoided NaN for dates in (AM/PM and YYYY/MM/DD) format in safari browser by adding 'T'; parsing from string
 
 ## **Features**
-* Funtions for Convering dates in AM/PM and yyyy-mm-dd formats were written without using any library
+* Funtions for Convering dates in AM/PM and yyyy/mm/dd formats were written without using any library
 * Material ui was used in styling the weather cards and button and material icons for icons
 * User can get tempatures for a given country Munich in this case
 * Refresh button to update data
