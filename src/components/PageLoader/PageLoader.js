@@ -4,7 +4,7 @@ import { Typography } from '@material-ui/core';
 
 const PageLoader = () => {
   return (
-    <div className="loader-container">
+    <div className="loader-container" data-testid="loader">
       <div className="lds-ripple ">
         <div></div>
         <div></div>

@@ -21,7 +21,7 @@ import Error from '../../components/Error/Error';
 const WeatherHome = ({ getWeatherDetails }) => {
   const classes = useStyles();
   const matches = useMediaQuery('(max-width:600px)');
-  const [value, setValue] = useState('metric');
+  const [value, setValue] = useState('imperial');
 
   const [perPage, setPerpage] = useState(3);
   const [page, setPage] = useState(0);

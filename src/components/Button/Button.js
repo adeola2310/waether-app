@@ -10,6 +10,7 @@ const CustomButton = ({ title, onClick }) => {
       color="primary"
       className={classes.button}
       onClick={onClick}
+      data-testid="button"
     >
       {title}
     </Button>

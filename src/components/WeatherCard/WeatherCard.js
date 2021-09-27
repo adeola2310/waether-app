@@ -4,21 +4,21 @@ import WbCloudyRoundedIcon from '@material-ui/icons/WbCloudyRounded';
 import ClearAllIcon from '@material-ui/icons/ClearAll';
 import LooksRoundedIcon from '@material-ui/icons/LooksRounded';
 import PropTypes from 'prop-types';
-import { timeConverterAMPM, formatDate } from '../../utils/helpers';
+import { formatDate, timeConverterAMPM } from '../../utils/helpers';
 
 const WeatherCard = props => {
   const [borderClass, setBorderClass] = useState('');
 
   const { data, unit, setTime, setTemp } = props;
 
-  const weatherI = data[1][0];
-  const weatherItem = data[1];
+  const weatherI = data?.[1][0];
+  const weatherItem = data?.[1];
 
   const handleSelect = () => {
     setBorderClass('4px solid #3f51b5');
     const temp = weatherItem?.map(item => item?.main?.temp);
     const time = weatherItem?.map(item =>
-      timeConverterAMPM(new Date(item?.dt_txt))
+      timeConverterAMPM(new Date(item?.dt_txt.replace(' ', 'T')))
     );
     setTemp(temp);
     setTime(time);
@@ -55,7 +55,11 @@ const WeatherCard = props => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.card} onClick={() => handleSelect()}>
+    <Card
+      className={classes.card}
+      onClick={() => handleSelect()}
+      data-testid="card-container"
+    >
       <CardContent>
         <Typography
           className={classes.title}
@@ -68,6 +72,7 @@ const WeatherCard = props => {
           className={classes.temperature}
           color="textSecondary"
           gutterBottom
+          data-testid="unit"
         >
           {weatherI?.main?.temp}°{unit === 'metric' ? 'C' : 'F'}
         </Typography>
@@ -89,8 +94,13 @@ const WeatherCard = props => {
             </>
           ) : null}
         </div>
-        <Typography className={classes.date} color="textSecondary" gutterBottom>
-          Date: {formatDate(new Date(weatherI?.dt_txt))}
+        <Typography
+          className={classes.date}
+          color="textSecondary"
+          gutterBottom
+          data-testid="date"
+        >
+          Date: {formatDate(new Date(weatherI?.dt_txt.replace(' ', 'T')))}
         </Typography>
       </CardContent>
     </Card>
