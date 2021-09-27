@@ -52,6 +52,9 @@ Deployment link is: https://weathermini-app.netlify.app/
 * Funtions for Convering dates in AM/PM and yyyy-mm-dd formats were written without using any library
 * Material ui was used in styling the weather cards and button and material icons for icons
 * User can get tempatures for a given country Munich in this case
+* Refresh button to update data
+* Loading screen that shows before the data gets displayed
+* Weather cards to display the temperature, date and forecast for Munich city 
 
 
 ## **Proposed Improvement**
