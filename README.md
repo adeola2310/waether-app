@@ -1,6 +1,6 @@
 ## **Deployment**
 This project is deployed using continous deployment with Netlify.
-Deployment link is: https://weatherminiapp.netlify.app/
+Deployment link is: https://weather-mini.netlify.app/ 
 
 ## **Getting Started**
 *```Git clone "name of repo"```
@@ -34,7 +34,7 @@ Deployment link is: https://weatherminiapp.netlify.app/
 
 ![myimage-alt-tag](https://res.cloudinary.com/upperli/image/upload/v1632602539/screencapture-localhost-3000-2021-09-24-13_16_01_hlqlr5.png) -Desktop view(selected)
 
-![myimage-alt-tag](https://res.cloudinary.com/upperli/image/upload/v1632602538/screencapture-localhost-3000-2021-09-24-13_17_45_wqc3jq.png) - Mobile View
+![myimage-alt-tag](https://res.cloudinary.com/upperli/image/upload/v1632753007/screencapture-localhost-3001-2021-09-27-15_25_05_x1mbw0.png) - Mobile View
 
 
 ## **Best Practice**
@@ -46,12 +46,12 @@ Deployment link is: https://weatherminiapp.netlify.app/
 * Redux for state management to avoid prop drilling in app
 * All files related to a single components are in a folder
 * Ensure that I make use of code splitting to reduce load time and allow load chunk only when a neccessary component/page is rendered or needed, Using suspense and lazy.
+* Avoided NaN for dates in (AM/PM and YYYY/MM/DD) format in safari browser by adding 'T'; parsing from string
 
 ## **Features**
 * Funtions for Convering dates in AM/PM and yyyy-mm-dd formats were written without using any library
 * Material ui was used in styling the weather cards and button and material icons for icons
 * User can get tempatures for a given country Munich in this case
-* Avoided NaN for dates in (AM/PM and YYYY/MM/DD) format in safari browser by adding 'T'; parsing from string
 
 
 ## **Proposed Improvement**
