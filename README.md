@@ -1,6 +1,6 @@
 ## **Deployment**
 This project is deployed using continous deployment with Netlify.
-Deployment link is: https://weather-mini.netlify.app/ 
+Deployment link is: https://weathermini-app.netlify.app/
 
 ## **Getting Started**
 *```Git clone "name of repo"```
@@ -34,7 +34,7 @@ Deployment link is: https://weather-mini.netlify.app/
 
 ![myimage-alt-tag](https://res.cloudinary.com/upperli/image/upload/v1632602539/screencapture-localhost-3000-2021-09-24-13_16_01_hlqlr5.png) -Desktop view(selected)
 
-![myimage-alt-tag](https://res.cloudinary.com/upperli/image/upload/v1632753007/screencapture-localhost-3001-2021-09-27-15_25_05_x1mbw0.png) - Mobile View
+![myimage-alt-tag](https://res.cloudinary.com/upperli/image/upload/v1632753698/screencapture-localhost-3001-2021-09-27-15_41_07_g1tcuv.png) - Mobile View
 
 
 ## **Best Practice**
