@@ -18,7 +18,8 @@ import PageLoader from '../../components/PageLoader/PageLoader';
 import { filterListItems } from '../../utils/helpers';
 import Error from '../../components/Error/Error';
 
-const WeatherHome = ({ getWeatherDetails }) => {
+const WeatherHome = props => {
+  const { getWeatherDetails } = props;
   const classes = useStyles();
   const matches = useMediaQuery('(max-width:600px)');
   const [value, setValue] = useState('imperial');

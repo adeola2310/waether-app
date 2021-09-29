@@ -11,13 +11,6 @@ const defaultProps = {
 describe('the Weather Card Component', () => {
   afterEach(cleanup);
 
-  // it('should call handleCardClick when user clicks anywhere in card', () => {
-  //     const { getByTestId } = render(<WeatherCard {...defaultProps} />);
-  //     const element = getByTestId('card-container');
-  //     fireEvent.click(element);
-  //     expect(defaultProps.handleSelect).toHaveBeenCalled();
-  // });
-
   it('should render unit as C when unit is metric', () => {
     const { getByTestId } = render(<WeatherCard {...defaultProps} />);
     const element = getByTestId('unit');
@@ -33,18 +26,4 @@ describe('the Weather Card Component', () => {
     const element = getByTestId('unit');
     expect(element.textContent).toEqual('°F');
   });
-
-  // it('should render temperature value correctly', () => {
-  //     // Act
-  //     const { getByTestId } = render(<WeatherCard {...defaultProps} />);
-  //     const element = getByTestId('unit');
-  //
-  //     // Assert
-  //     expect(element.textContent).toEqual('50');
-  // });
-  // it('should render temperature date correctly', () => {
-  //     const { getByTestId } = render(<WeatherCard {...defaultProps} />);
-  //     const element = getByTestId('date');
-  //     expect(element.textContent).toEqual('2019/09/18');
-  // });
 });
