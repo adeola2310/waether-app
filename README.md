@@ -46,7 +46,7 @@ Deployment link is: https://weathermini-app.netlify.app/
 * Redux for state management to avoid prop drilling in app
 * All files related to a single components are in a folder
 * Ensure that I make use of code splitting to reduce load time and allow load chunk only when a neccessary component/page is rendered or needed, Using suspense and lazy.
-* Avoided NaN for dates in (AM/PM and YYYY/MM/DD) format in safari browser by adding 'T'; parsing from string
+* Avoided NaN for dates in (AM/PM and YYYY/MM/DD format) safari browser by adding 'T'; parsing from string
 
 ## **Features**
 * Funtions for Convering dates in AM/PM and yyyy/mm/dd formats were written without using any library
@@ -60,3 +60,4 @@ Deployment link is: https://weathermini-app.netlify.app/
 ## **Proposed Improvement**
 * More unit tests can be added
 * Mobile device view can also be improved more for users
+* Once another card is clicked the active border on the border should go off
