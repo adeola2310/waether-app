@@ -1,6 +1,6 @@
 ## **Deployment**
 This project is deployed using continous deployment with Netlify.
-Deployment link is: https://weather-mini.netlify.app/ 
+Deployment link is: https://weathermini-app.netlify.app/
 
 ## **Getting Started**
 *```Git clone "name of repo"```
@@ -34,7 +34,7 @@ Deployment link is: https://weather-mini.netlify.app/
 
 ![myimage-alt-tag](https://res.cloudinary.com/upperli/image/upload/v1632602539/screencapture-localhost-3000-2021-09-24-13_16_01_hlqlr5.png) -Desktop view(selected)
 
-![myimage-alt-tag](https://res.cloudinary.com/upperli/image/upload/v1632753007/screencapture-localhost-3001-2021-09-27-15_25_05_x1mbw0.png) - Mobile View
+![myimage-alt-tag](https://res.cloudinary.com/upperli/image/upload/v1632753698/screencapture-localhost-3001-2021-09-27-15_41_07_g1tcuv.png) - Mobile View
 
 
 ## **Best Practice**
@@ -49,9 +49,12 @@ Deployment link is: https://weather-mini.netlify.app/
 * Avoided NaN for dates in (AM/PM and YYYY/MM/DD) format in safari browser by adding 'T'; parsing from string
 
 ## **Features**
-* Funtions for Convering dates in AM/PM and yyyy-mm-dd formats were written without using any library
+* Funtions for Convering dates in AM/PM and yyyy/mm/dd formats were written without using any library
 * Material ui was used in styling the weather cards and button and material icons for icons
 * User can get tempatures for a given country Munich in this case
+* Refresh button to update data
+* Loading screen that shows before the data gets displayed
+* Weather cards to display the temperature, date and forecast for Munich city 
 
 
 ## **Proposed Improvement**
